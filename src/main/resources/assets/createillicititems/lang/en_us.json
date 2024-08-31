@@ -1,0 +1,59 @@
+{
+  "item.createillicititems.coca_seeds": "Coca Seeds",
+  "item.createillicititems.coca_leaf": "Coca Leaf",
+  "item.createillicititems.dried_coca_leaf": "Dried Coca Leaf",
+  "item.createillicititems.burnt_coca_leaf": "Burnt Coca Leaf",
+  "item.createillicititems.coca_paste": "Coca Paste",
+  "item.createillicititems.coca_paste_mixture": "Coca Paste Mixture",
+  "item.createillicititems.crude_coca": "Crude Coca",
+  "item.createillicititems.crude_coca_mixture": "Crude Coca Mixture",
+  "item.createillicititems.raw_cocaine": "Raw Cocaine",
+  "item.createillicititems.cocaine": "Cocaine",
+
+  "item.createillicititems.cane_juice": "Cane Juice Bottle",
+  "item.createillicititems.cane_juice_bucket": "Cane Juice Bucket",
+
+  "item.createillicititems.fermented_cane_juice": "Fermented Cane Juice Bottle",
+  "item.createillicititems.fermented_cane_juice_bucket": "Fermented Cane Juice Bucket",
+  "item.createillicititems.heated_fermented_cane_juice": "Heated Fermented Cane Juice",
+  "item.createillicititems.heated_fermented_cane_juice_bucket": "Heated Fermented Cane Juice Bucket",
+  "item.createillicititems.ethanol_bottle": "Ethanol Bottle",
+  "item.createillicititems.ethanol_bucket": "Ethanol Bucket",
+
+  "item.createillicititems.potato_mash": "Potato Mash",
+  "item.createillicititems.potato_mash_juice_bottle": "Potato Mash Juice Bottle",
+  "item.createillicititems.potato_mash_juice_bucket": "Potato Mash Juice Bucket",
+  "item.createillicititems.fermented_potato_mash_juice_bottle": "Fermented Potato Mash Juice Bottle",
+  "item.createillicititems.fermented_potato_mash_juice_bucket": "Fermented Potato Mash Juice Bucket",
+  "item.createillicititems.heated_fermented_potato_mash_juice_bottle": "Heated Fermented Potato Mash Juice Bottle",
+  "item.createillicititems.heated_fermented_potato_mash_juice_bucket": "Heated Fermented Potato Mash Juice Bucket",
+  "item.createillicititems.empty_vodka_bottle": "Empty Vodka Bottle",
+  "item.createillicititems.raw_vodka_bottle": "Raw Vodka Bottle",
+  "item.createillicititems.raw_vodka_bucket": "Raw Vodka Bucket",
+  "item.createillicititems.vodka_bottle": "Vodka Bottle",
+  "item.createillicititems.vodka_bucket": "Vodka Bucket",
+
+  "item.createillicititems.trona_chunk": "Trona Chunk",
+  "item.createillicititems.powdered_chalk": "Powdered Chalk",
+
+  "item.createillicititems.cannabis_leaf": "Cannabis Leaf",
+
+  "block.createillicititems.fermenting_barrel": "Fermenting Barrel",
+  "block.createillicititems.dried_cane_juice_block": "Dried Cane Juice Block",
+  "block.createillicititems.trona_ore": "Trona Ore",
+  "block.createillicititems.deepslate_trona_ore": "Deepslate Trona Ore",
+
+  "fluid_type.createillicititems.cane_juice_fluid": "Cane Juice",
+  "fluid_type.createillicititems.fermented_cane_juice_fluid": "Fermented Cane Juice",
+  "fluid_type.createillicititems.heated_fermented_cane_juice_fluid": "Heated Fermented Cane Juice",
+  "fluid_type.createillicititems.ethanol_fluid": "Ethanol",
+
+  "fluid_type.createillicititems.potato_mash_juice_fluid": "Potato Mash Juice",
+  "fluid_type.createillicititems.fermented_potato_mash_juice_fluid": "Fermented Potato Mash Juice",
+  "fluid_type.createillicititems.heated_fermented_potato_mash_juice_fluid": "Heated Fermented Potato Mash Juice",
+  "fluid_type.createillicititems.raw_vodka_fluid": "Raw Vodka",
+  "fluid_type.createillicititems.vodka_fluid": "Vodka",
+
+  "creativetab.mod_tab_main": "Create: Illicit Items",
+  "createivetab.mod_tab_liquids": "Create: Illicit Liquids"
+}

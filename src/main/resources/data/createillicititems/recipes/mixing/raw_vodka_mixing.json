@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "amount": 500,
+      "fluid": "createillicititems:heated_fermented_potato_mash_juice"
+    }
+  ],
+  "results": [
+    {
+      "amount": 500,
+      "fluid": "createillicititems:raw_vodka"
+    }
+  ]
+}

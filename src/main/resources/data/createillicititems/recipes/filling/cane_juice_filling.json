@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "amount": 250,
+      "fluid": "createillicititems:cane_juice",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "createillicititems:cane_juice"
+    }
+  ]
+}

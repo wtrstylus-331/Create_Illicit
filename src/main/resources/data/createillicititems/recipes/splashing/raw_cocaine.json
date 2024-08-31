@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createillicititems:crude_coca_mixture"
+    }
+  ],
+  "results": [
+    {
+      "item": "createillicititems:raw_cocaine"
+    }
+  ]
+}

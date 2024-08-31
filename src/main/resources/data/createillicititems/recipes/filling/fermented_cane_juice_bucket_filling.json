@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "amount": 1000,
+      "fluid": "createillicititems:fermented_cane_juice",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "createillicititems:fermented_cane_juice_bucket"
+    }
+  ]
+}

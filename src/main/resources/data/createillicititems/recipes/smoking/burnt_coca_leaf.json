@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "cookingtime": 250,
+  "experience": 0.0,
+  "ingredient": {
+    "item": "createillicititems:dried_coca_leaf"
+  },
+  "result": "createillicititems:burnt_coca_leaf"
+}

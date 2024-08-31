@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "createillicititems:trona_chunk"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "count": 2,
+      "item": "createillicititems:powdered_chalk"
+    },
+    {
+      "chance": 0.75,
+      "item": "createillicititems:powdered_chalk"
+    }
+  ]
+}

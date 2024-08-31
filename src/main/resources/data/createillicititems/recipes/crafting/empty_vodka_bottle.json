@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "empty_vodka_bottle",
+  "pattern": [
+    "S",
+    "S",
+    "S"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "createillicititems:empty_vodka_bottle",
+    "count": 3
+  }
+}

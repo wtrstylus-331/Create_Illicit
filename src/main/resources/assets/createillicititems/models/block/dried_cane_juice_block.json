@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "createillicititems:block/dried_cane_juice_block"
+  }
+}

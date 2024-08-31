@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createillicititems:coca_paste"
+    },
+    {
+      "amount": 100,
+      "fluid": "createillicititems:ethanol"
+    }
+  ],
+  "results": [
+    {
+      "item": "createillicititems:coca_paste_mixture"
+    }
+  ]
+}

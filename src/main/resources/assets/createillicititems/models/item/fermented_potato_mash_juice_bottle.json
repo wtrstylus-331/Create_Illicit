@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "createillicititems:item/fermented_potato_mash_juice_bottle"
+  }
+}

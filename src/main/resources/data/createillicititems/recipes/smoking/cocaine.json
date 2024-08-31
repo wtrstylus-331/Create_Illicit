@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "cookingtime": 250,
+  "experience": 0.5,
+  "ingredient": {
+    "item": "createillicititems:raw_cocaine"
+  },
+  "result": "createillicititems:cocaine"
+}

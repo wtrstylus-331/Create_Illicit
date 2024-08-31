@@ -1,0 +1,12 @@
+{
+  "type": "createillicititems:fermenting_barrel",
+  "ingredients": [
+    {
+      "item": "createillicititems:cane_juice_bucket"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "item": "createillicititems:fermented_cane_juice_bucket"
+  }
+}

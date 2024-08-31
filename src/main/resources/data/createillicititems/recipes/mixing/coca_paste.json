@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createillicititems:dried_coca_leaf"
+    },
+    {
+      "item": "createillicititems:dried_coca_leaf"
+    },
+    {
+      "amount": 250,
+      "fluid": "minecraft:water",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "createillicititems:coca_paste"
+    }
+  ]
+}

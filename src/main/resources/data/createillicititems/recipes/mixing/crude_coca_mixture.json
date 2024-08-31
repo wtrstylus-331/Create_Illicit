@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createillicititems:crude_coca"
+    },
+    {
+      "count": 2,
+      "item": "createillicititems:powdered_chalk"
+    }
+  ],
+  "results": [
+    {
+      "item": "createillicititems:crude_coca_mixture"
+    }
+  ]
+}

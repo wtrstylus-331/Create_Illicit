@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createillicititems:empty_vodka_bottle"
+    },
+    {
+      "amount": 250,
+      "fluid": "createillicititems:vodka",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "createillicititems:vodka_bottle"
+    }
+  ]
+}

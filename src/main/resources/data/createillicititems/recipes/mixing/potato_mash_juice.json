@@ -1,0 +1,25 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createillicititems:potato_mash"
+    },
+    {
+      "item": "createillicititems:potato_mash"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "amount": 250,
+      "fluid": "minecraft:water",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "fluid": "createillicititems:potato_mash_juice"
+    }
+  ]
+}
