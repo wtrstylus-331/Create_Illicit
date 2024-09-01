@@ -6,6 +6,7 @@ import com.waterstylus331.createillicititems.block.block_entity.ModBlockEntities
 import com.waterstylus331.createillicititems.fluids.FluidTypes;
 import com.waterstylus331.createillicititems.fluids.ModFluids;
 import com.waterstylus331.createillicititems.item.ModItems;
+import com.waterstylus331.createillicititems.loot.ModLootModifiers;
 import com.waterstylus331.createillicititems.recipe.ModRecipes;
 import com.waterstylus331.createillicititems.screen.FermentingBarrelScreen;
 import com.waterstylus331.createillicititems.screen.ModMenuTypes;
@@ -44,6 +45,7 @@ public class CreateIllicitItems
         ModMenuTypes.register(modEventBus);
         FluidTypes.register(modEventBus);
         ModFluids.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
         modEventBus.addListener(this::enqueue);
@@ -55,12 +57,6 @@ public class CreateIllicitItems
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
-    {
-
-    }
-
-    @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event)
     {
 
     }
