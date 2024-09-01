@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:calcite"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "count": 1,
+      "item": "createillicititems:powdered_chalk"
+    },
+    {
+      "chance": 0.75,
+      "item": "createillicititems:powdered_chalk"
+    }
+  ]
+}
