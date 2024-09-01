@@ -37,6 +37,9 @@ public class Tab {
                         pOutput.accept(new ItemStack(ModItems.CANNABIS_LEAF.get()));
 
                         pOutput.accept(new ItemStack(ModBlocks.FERMENTING_BARREL.get()));
+
+                        pOutput.accept(new ItemStack(ModBlocks.TRONA_ORE.get()));
+                        pOutput.accept(new ItemStack(ModBlocks.DEEPSLATE_TRONA_ORE.get()));
                     })
                     .build());
 
