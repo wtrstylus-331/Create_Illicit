@@ -1,0 +1,24 @@
+{
+  "values": [
+    "createillicititems:cane_juice",
+    "createillicititems:cane_juice_bucket",
+    "createillicititems:fermented_cane_juice",
+    "createillicititems:fermented_cane_juice_bucket",
+    "createillicititems:heated_fermented_cane_juice",
+    "createillicititems:heated_fermented_cane_juice_bucket",
+    "createillicititems:ethanol_bottle",
+    "createillicititems:ethanol_bucket",
+
+    "createillicititems:potato_mash_juice_bottle",
+    "createillicititems:potato_mash_juice_bucket",
+    "createillicititems:fermented_potato_mash_juice_bottle",
+    "createillicititems:fermented_potato_mash_juice_bucket",
+    "createillicititems:heated_fermented_potato_mash_juice_bottle",
+    "createillicititems:heated_fermented_potato_mash_juice_bucket",
+    "createillicititems:raw_vodka_bottle",
+    "createillicititems:raw_vodka_bucket",
+    "createillicititems:empty_vodka_bottle",
+    "createillicititems:vodka_bottle",
+    "createillicititems:vodka_bucket"
+  ]
+}

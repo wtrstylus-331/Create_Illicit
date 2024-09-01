@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "createillicititems:potato_mash"
+    },
+    "title": "Mashed Potatoes",
+    "description": "Mash some potatoes. Simple as that",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "createillicititems:illicit_root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "createillicititems:potato_mash"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "sends_telemetry_event": true
+}

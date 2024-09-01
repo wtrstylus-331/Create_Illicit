@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "createillicititems:cannabis_leaf"
+    },
+    "title": "Get a whiff",
+    "description": "Harvest some cannabis leaves",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "createillicititems:illicit_root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "createillicititems:cannabis_leaf"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "sends_telemetry_event": true
+}

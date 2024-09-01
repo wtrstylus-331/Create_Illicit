@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "createillicititems:coca_paste"
+    },
+    "title": "Get your hands dirty",
+    "description": "Acquire coca paste by mixing dried coca leaves with some water",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "createillicititems:coca_leaf",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "sends_telemetry_event": true
+}
