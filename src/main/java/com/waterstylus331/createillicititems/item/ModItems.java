@@ -118,6 +118,9 @@ public class ModItems {
     public static final RegistryObject<Item> CANNABIS_LEAF = ITEMS.register("cannabis_leaf",
             () -> new Item(new Item.Properties().stacksTo(64)));
 
+    public static final RegistryObject<Item> CANNABIS_SEEDS = ITEMS.register("cannabis_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.CANNABIS_PLANT.get(), new Item.Properties()));
+
     public static void register(IEventBus bus) {
         ITEMS.register(bus);
     }
