@@ -1,0 +1,15 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:forest",
+    "minecraft:taiga",
+    "minecraft:jungle",
+    "minecraft:birch_forest",
+    "minecraft:savanna"
+  ],
+  "features": [
+    "createillicititems:coca_crop_placed",
+    "createillicititems:cannabis_crop_placed"
+  ],
+  "step": "vegetal_decoration"
+}
