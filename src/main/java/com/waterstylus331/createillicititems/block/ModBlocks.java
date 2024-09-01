@@ -1,6 +1,7 @@
 package com.waterstylus331.createillicititems.block;
 
 import com.waterstylus331.createillicititems.CreateIllicitItems;
+import com.waterstylus331.createillicititems.block.custom.CannabisCropBlock;
 import com.waterstylus331.createillicititems.block.custom.CocaCropBlock;
 import com.waterstylus331.createillicititems.block.custom.FermentingBarrelBlock;
 import com.waterstylus331.createillicititems.fluids.ModFluids;
@@ -33,6 +34,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> FERMENTING_BARREL = registerBlock("fermenting_barrel",
             () -> new FermentingBarrelBlock(BlockBehaviour.Properties.copy(Blocks.BARREL).noOcclusion()));
+
+    public static final RegistryObject<Block> CANNABIS_PLANT = BLOCKS.register("cannabis_crop",
+            () -> new CannabisCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
     // for ethanol
     public static final RegistryObject<LiquidBlock> CANE_JUICE_BLOCK = registerBlock("cane_juice_block",
