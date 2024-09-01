@@ -4,10 +4,12 @@ import com.waterstylus331.createillicititems.CreateIllicitItems;
 import com.waterstylus331.createillicititems.block.custom.CannabisCropBlock;
 import com.waterstylus331.createillicititems.block.custom.CocaCropBlock;
 import com.waterstylus331.createillicititems.block.custom.FermentingBarrelBlock;
+import com.waterstylus331.createillicititems.block.custom.WildCropBlock;
 import com.waterstylus331.createillicititems.fluids.ModFluids;
 import com.waterstylus331.createillicititems.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.BlockItem;
@@ -26,17 +28,24 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
+@SuppressWarnings("deprecation")
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CreateIllicitItems.MODID);
 
     public static final RegistryObject<Block> COCA_PLANT = BLOCKS.register("coca_crop",
             () -> new CocaCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
+    public static final RegistryObject<Block> WILD_COCA_PLANT = BLOCKS.register("wild_coca_crop",
+            () -> new WildCropBlock(MobEffects.CONFUSION,6, BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+
     public static final RegistryObject<Block> FERMENTING_BARREL = registerBlock("fermenting_barrel",
             () -> new FermentingBarrelBlock(BlockBehaviour.Properties.copy(Blocks.BARREL).noOcclusion()));
 
     public static final RegistryObject<Block> CANNABIS_PLANT = BLOCKS.register("cannabis_crop",
             () -> new CannabisCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+
+    public static final RegistryObject<Block> WILD_CANNABIS_PLANT = BLOCKS.register("wild_cannabis_crop",
+            () -> new WildCropBlock(MobEffects.CONFUSION,6, BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
     // for ethanol
     public static final RegistryObject<LiquidBlock> CANE_JUICE_BLOCK = registerBlock("cane_juice_block",

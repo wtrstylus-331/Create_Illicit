@@ -19,6 +19,9 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, CreateIllicitItems.MODID);
 
+    public static final RegistryObject<Item> COCA_PLANT_ICON_ADV = ITEMS.register("coca_plant_icon",
+            () -> new Item(new Item.Properties().stacksTo(64).fireResistant()));
+
     public static final RegistryObject<Item> COCA_SEEDS = ITEMS.register("coca_seeds",
             () -> new ItemNameBlockItem(ModBlocks.COCA_PLANT.get(), new Item.Properties()));
 
