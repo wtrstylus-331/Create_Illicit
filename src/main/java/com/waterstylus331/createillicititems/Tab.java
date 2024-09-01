@@ -23,6 +23,8 @@ public class Tab {
                         pOutput.accept(new ItemStack(ModItems.BURNT_COCA_LEAF.get()));
                         pOutput.accept(new ItemStack(ModItems.COCA_PASTE.get()));
                         pOutput.accept(new ItemStack(ModItems.COCA_PASTE_MIXTURE.get()));
+                        pOutput.accept(new ItemStack(ModItems.TRONA_CHUNK.get()));
+                        pOutput.accept(new ItemStack(ModItems.POWDERED_CHALK.get()));
                         pOutput.accept(new ItemStack(ModItems.CRUDE_COCA.get()));
                         pOutput.accept(new ItemStack(ModItems.CRUDE_COCA_MIXTURE.get()));
                         pOutput.accept(new ItemStack(ModItems.RAW_COCAINE.get()));
@@ -31,6 +33,7 @@ public class Tab {
                         pOutput.accept(new ItemStack(ModItems.POTATO_MASH.get()));
                         pOutput.accept(new ItemStack(ModItems.EMPTY_VODKA_BOTTLE.get()));
 
+                        pOutput.accept(new ItemStack(ModItems.CANNABIS_SEEDS.get()));
                         pOutput.accept(new ItemStack(ModItems.CANNABIS_LEAF.get()));
 
                         pOutput.accept(new ItemStack(ModBlocks.FERMENTING_BARREL.get()));
