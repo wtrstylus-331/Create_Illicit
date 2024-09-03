@@ -3,10 +3,10 @@ package com.waterstylus331.createillicititems.item;
 import com.waterstylus331.createillicititems.CreateIllicitItems;
 import com.waterstylus331.createillicititems.block.ModBlocks;
 import com.waterstylus331.createillicititems.fluids.ModFluids;
-import com.waterstylus331.createillicititems.item.custom.CaneJuiceItem;
-import com.waterstylus331.createillicititems.item.custom.EthanolItem;
-import com.waterstylus331.createillicititems.item.custom.RawVodkaItem;
-import com.waterstylus331.createillicititems.item.custom.VodkaItem;
+import com.waterstylus331.createillicititems.item.custom.*;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
@@ -50,7 +50,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().stacksTo(64)));
 
     public static final RegistryObject<Item> COCAINE = ITEMS.register("cocaine",
-            () -> new Item(new Item.Properties().stacksTo(64)));
+            () -> new CocaineItem(new Item.Properties().stacksTo(64).food
+                    (new FoodProperties.Builder().saturationMod(0.5f).nutrition(1)
+                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1), 1).build())));
 
     public static final RegistryObject<Item> CANE_JUICE = ITEMS.register("cane_juice",
             () -> new CaneJuiceItem(new Item.Properties().stacksTo(64)));
