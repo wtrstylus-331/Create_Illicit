@@ -55,6 +55,12 @@
   "fluid_type.createillicititems.raw_vodka_fluid": "Raw Vodka",
   "fluid_type.createillicititems.vodka_fluid": "Vodka",
 
+  "effect.createillicititems.euphoria": "Euphoria",
+  "effect.createillicititems.stoned": "Stoned",
+  "effect.createillicititems.overdose": "Overdose",
+
+  "death.attack.overdose": "%s overdosed on drugs",
+
   "creativetab.mod_tab_main": "Create: Illicit Items",
   "createivetab.mod_tab_liquids": "Create: Illicit Liquids"
 }
