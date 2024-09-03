@@ -3,6 +3,7 @@ package com.waterstylus331.createillicititems;
 import com.mojang.logging.LogUtils;
 import com.waterstylus331.createillicititems.block.ModBlocks;
 import com.waterstylus331.createillicititems.block.block_entity.ModBlockEntities;
+import com.waterstylus331.createillicititems.effect.ModEffects;
 import com.waterstylus331.createillicititems.fluids.FluidTypes;
 import com.waterstylus331.createillicititems.fluids.ModFluids;
 import com.waterstylus331.createillicititems.item.ModItems;
@@ -46,6 +47,7 @@ public class CreateIllicitItems
         FluidTypes.register(modEventBus);
         ModFluids.register(modEventBus);
         ModLootModifiers.register(modEventBus);
+        ModEffects.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
         modEventBus.addListener(this::enqueue);
