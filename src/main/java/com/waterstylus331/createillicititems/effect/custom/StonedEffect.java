@@ -1,5 +1,6 @@
 package com.waterstylus331.createillicititems.effect.custom;
 
+import com.waterstylus331.createillicititems.effect.ModEffects;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -16,17 +17,35 @@ public class StonedEffect extends MobEffect {
     @Override
     public void applyEffectTick(LivingEntity entity, int amplifier) {
         if (entity instanceof Player player) {
-            if (!player.isDeadOrDying()) {
-                player.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 400, 1) {
+            if (!player.isDeadOrDying() && !player.level().isClientSide()) {
+                if (player.hasEffect(ModEffects.EUPHORIA.get())) {
+                    player.removeEffect(ModEffects.EUPHORIA.get());
+
+                    if (player.hasEffect(MobEffects.MOVEMENT_SPEED)) {
+                        player.removeEffect(MobEffects.MOVEMENT_SPEED);
+                    }
+                }
+
+                player.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 200, 0) {
                     @Override
                     public boolean showIcon() {
                         return false;
                     }
+
+                    @Override
+                    public boolean isVisible() {
+                        return false;
+                    }
                 });
 
-                player.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 300, 1) {
+                player.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 200, 0) {
                     @Override
                     public boolean showIcon() {
+                        return false;
+                    }
+
+                    @Override
+                    public boolean isVisible() {
                         return false;
                     }
                 });

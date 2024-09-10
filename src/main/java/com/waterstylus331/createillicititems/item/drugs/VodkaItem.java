@@ -1,6 +1,8 @@
-package com.waterstylus331.createillicititems.item.custom;
+package com.waterstylus331.createillicititems.item.drugs;
 
+import com.waterstylus331.createillicititems.effect.ModEffects;
 import com.waterstylus331.createillicititems.item.ModItems;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
@@ -16,6 +18,9 @@ public class VodkaItem extends HoneyBottleItem {
     public VodkaItem(Properties properties) {
         super(properties);
     }
+
+    protected int count;
+    protected long firstConsumptionTime;
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
@@ -44,12 +49,30 @@ public class VodkaItem extends HoneyBottleItem {
 
     @Override
     public ItemStack finishUsingItem(ItemStack itemStack, Level level, LivingEntity entity) {
-        if (!level.isClientSide) {
-            entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 240, 2));
-            entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 240, 1));
-        }
-
         if (entity instanceof Player player) {
+            CompoundTag tag = itemStack.getOrCreateTag();
+
+            this.count = tag.getInt("consumptionCount");
+            this.firstConsumptionTime = tag.getLong("firstConsumptionTime");
+
+            long currentTime = level.getGameTime();
+
+            if (this.count == 0 || (currentTime - this.firstConsumptionTime) >= 600) {
+                this.count = 0;
+                this.firstConsumptionTime = currentTime;
+            }
+
+            this.count++;
+
+            if (this.count >= 10) {
+                if (!player.isDeadOrDying()) {
+                    player.addEffect(new MobEffectInstance(ModEffects.DRUNK.get(), 600));
+                }
+            }
+
+            tag.putInt("consumptionCount", this.count);
+            tag.putLong("firstConsumptionTime", this.firstConsumptionTime);
+
             if (!player.getAbilities().instabuild) {
                 itemStack.shrink(1);
 
