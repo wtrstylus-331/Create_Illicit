@@ -4,8 +4,9 @@ import com.waterstylus331.createillicititems.CreateIllicitItems;
 import com.waterstylus331.createillicititems.block.ModBlocks;
 import com.waterstylus331.createillicititems.fluids.ModFluids;
 import com.waterstylus331.createillicititems.item.custom.*;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
+import com.waterstylus331.createillicititems.item.drugs.BluntItem;
+import com.waterstylus331.createillicititems.item.drugs.CocaineItem;
+import com.waterstylus331.createillicititems.item.drugs.VodkaItem;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
@@ -51,8 +52,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> COCAINE = ITEMS.register("cocaine",
             () -> new CocaineItem(new Item.Properties().stacksTo(64).food
-                    (new FoodProperties.Builder().saturationMod(0.5f).nutrition(1)
-                            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1), 1).build())));
+                    (new FoodProperties.Builder().saturationMod(0.5f).nutrition(1).build())));
 
     public static final RegistryObject<Item> CANE_JUICE = ITEMS.register("cane_juice",
             () -> new CaneJuiceItem(new Item.Properties().stacksTo(64)));
@@ -109,7 +109,8 @@ public class ModItems {
             () -> new BucketItem(ModFluids.SOURCE_RAW_VODKA, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
     public static final RegistryObject<Item> VODKA_BOTTLE = ITEMS.register("vodka_bottle",
-            () -> new VodkaItem(new Item.Properties().stacksTo(64)));
+            () -> new VodkaItem(new Item.Properties().stacksTo(64).food(
+                    new FoodProperties.Builder().saturationMod(2f).build())));
 
     public static final RegistryObject<Item> VODKA_BUCKET = ITEMS.register("vodka_bucket",
             () -> new BucketItem(ModFluids.SOURCE_VODKA, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
@@ -125,6 +126,17 @@ public class ModItems {
 
     public static final RegistryObject<Item> CANNABIS_SEEDS = ITEMS.register("cannabis_seeds",
             () -> new ItemNameBlockItem(ModBlocks.CANNABIS_PLANT.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> ROLLED_PAPER = ITEMS.register("rolled_paper",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> INCOMPLETE_BLUNT = ITEMS.register("incomplete_blunt",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> BLUNT = ITEMS.register("blunt",
+            () -> new BluntItem(new Item.Properties().durability(64).defaultDurability(64).food(
+                    new FoodProperties.Builder().saturationMod(1f).build()
+            )));
 
     public static void register(IEventBus bus) {
         ITEMS.register(bus);

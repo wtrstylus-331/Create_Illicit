@@ -1,5 +1,6 @@
 package com.waterstylus331.createillicititems.effect.custom;
 
+import com.waterstylus331.createillicititems.effect.ModEffects;
 import com.waterstylus331.createillicititems.misc.ModDamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffect;
@@ -18,12 +19,26 @@ public class OverdoseEffect extends MobEffect {
     public void applyEffectTick(LivingEntity entity, int amplifier) {
         if (entity instanceof Player player) {
             if (!player.isDeadOrDying() && !player.level().isClientSide()) {
+                if (player.hasEffect(ModEffects.EUPHORIA.get())) {
+                    player.removeEffect(ModEffects.EUPHORIA.get());
+
+                    if (player.hasEffect(MobEffects.MOVEMENT_SPEED)) {
+                        player.removeEffect(MobEffects.MOVEMENT_SPEED);
+                    }
+                }
+
                 player.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 200, 2) {
                     @Override
                     public boolean showIcon() {
                         return false;
                     }
+
+                    @Override
+                    public boolean isVisible() {
+                        return false;
+                    }
                 });
+
                 player.hurt(ModDamageTypes.causeOverdoseDamage(player), 4.5f * ((float) amplifier / 2));
             }
         }

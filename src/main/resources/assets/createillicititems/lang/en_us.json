@@ -38,9 +38,13 @@
 
   "item.createillicititems.cannabis_leaf": "Cannabis Leaf",
   "item.createillicititems.cannabis_seeds": "Cannabis Seeds",
+  "item.createillicititems.rolled_paper": "Rolled Paper",
+  "item.createillicititems.incomplete_blunt": "Incomplete Blunt",
+  "item.createillicititems.blunt": "Blunt",
 
   "block.createillicititems.fermenting_barrel": "Fermenting Barrel",
   "block.createillicititems.dried_cane_juice_block": "Dried Cane Juice Block",
+  "block.createillicititems.cocaine_block": "Cocaine Block",
   "block.createillicititems.trona_ore": "Trona Ore",
   "block.createillicititems.deepslate_trona_ore": "Deepslate Trona Ore",
 
@@ -57,6 +61,7 @@
 
   "effect.createillicititems.euphoria": "Euphoria",
   "effect.createillicititems.stoned": "Stoned",
+  "effect.createillicititems.drunk": "Drunk",
   "effect.createillicititems.overdose": "Overdose",
 
   "death.attack.overdose": "%s overdosed on drugs",

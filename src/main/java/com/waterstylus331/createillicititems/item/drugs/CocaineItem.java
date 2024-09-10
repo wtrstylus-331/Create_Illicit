@@ -1,4 +1,4 @@
-package com.waterstylus331.createillicititems.item.custom;
+package com.waterstylus331.createillicititems.item.drugs;
 
 import com.waterstylus331.createillicititems.effect.ModEffects;
 import net.minecraft.nbt.CompoundTag;
@@ -53,23 +53,24 @@ public class CocaineItem extends Item {
 
             long currentTime = level.getGameTime();
 
-            if (this.count == 0 || (currentTime - this.firstConsumptionTime) >= 200) {
+            if (this.count == 0 || (currentTime - this.firstConsumptionTime) >= 600) {
                 this.count = 0;
                 this.firstConsumptionTime = currentTime;
             }
 
             this.count++;
 
-            if (this.count >= 3) {
+            if (this.count >= 10) {
                 if (!player.isDeadOrDying()) {
-                    player.addEffect(new MobEffectInstance(ModEffects.OVERDOSE.get(), 200, 1));
-                    //player.hurt(level.damageSources().cactus(), 5);
+                    player.addEffect(new MobEffectInstance(ModEffects.OVERDOSE.get(), 300));
                 }
+            } else {
+                player.addEffect(new MobEffectInstance(ModEffects.EUPHORIA.get(), 400));
             }
 
             tag.putInt("consumptionCount", this.count);
             tag.putLong("firstConsumptionTime", this.firstConsumptionTime);
         }
-        return super.finishUsingItem(stack, level, entity);
+        return stack;
     }
 }

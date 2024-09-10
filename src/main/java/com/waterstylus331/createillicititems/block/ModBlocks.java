@@ -47,6 +47,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> WILD_CANNABIS_PLANT = BLOCKS.register("wild_cannabis_crop",
             () -> new WildCropBlock(MobEffects.CONFUSION,6, BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
+    public static final RegistryObject<Block> COCAINE_BLOCK = registerBlock("cocaine_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SAND).noOcclusion()));
+
     // for ethanol
     public static final RegistryObject<LiquidBlock> CANE_JUICE_BLOCK = registerBlock("cane_juice_block",
             () -> new LiquidBlock(ModFluids.SOURCE_CANE_JUICE, BlockBehaviour.Properties.copy(Blocks.WATER)));
