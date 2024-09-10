@@ -35,6 +35,10 @@ public class Tab {
 
                         pOutput.accept(new ItemStack(ModItems.CANNABIS_SEEDS.get()));
                         pOutput.accept(new ItemStack(ModItems.CANNABIS_LEAF.get()));
+                        pOutput.accept(new ItemStack(ModItems.ROLLED_PAPER.get()));
+                        pOutput.accept(new ItemStack(ModItems.BLUNT.get()));
+
+                        pOutput.accept(new ItemStack(ModBlocks.COCAINE_BLOCK.get()));
 
                         pOutput.accept(new ItemStack(ModBlocks.FERMENTING_BARREL.get()));
 
