@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "blunt",
+  "pattern": [
+    "PS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "createillicititems:cannabis_leaf"
+    },
+    "P": {
+      "item": "createillicititems:rolled_paper"
+    }
+  },
+  "result": {
+    "item": "createillicititems:blunt"
+  }
+}

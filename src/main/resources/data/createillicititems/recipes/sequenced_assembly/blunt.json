@@ -1,0 +1,33 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createillicititems:rolled_paper"
+  },
+  "loops": 3,
+  "results": [
+    {
+      "item": "createillicititems:blunt"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createillicititems:incomplete_blunt"
+        },
+        {
+          "item": "createillicititems:cannabis_leaf"
+        }
+      ],
+      "results": [
+        {
+          "item": "createillicititems:incomplete_blunt"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "createillicititems:incomplete_blunt"
+  }
+}
