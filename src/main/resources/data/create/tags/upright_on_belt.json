@@ -19,6 +19,11 @@
     "createillicititems:raw_vodka_bucket",
     "createillicititems:empty_vodka_bottle",
     "createillicititems:vodka_bottle",
-    "createillicititems:vodka_bucket"
+    "createillicititems:vodka_bucket",
+
+    "createillicititems:opium_latex_bottle",
+    "createillicititems:opium_latex_bucket",
+    "createillicititems:morphine_solution_bottle",
+    "createillicititems:morphine_solution_bucket"
   ]
 }
