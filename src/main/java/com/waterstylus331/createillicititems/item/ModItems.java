@@ -23,6 +23,7 @@ public class ModItems {
     public static final RegistryObject<Item> COCA_PLANT_ICON_ADV = ITEMS.register("coca_plant_icon",
             () -> new Item(new Item.Properties().stacksTo(64).fireResistant()));
 
+    // for cocaine
     public static final RegistryObject<Item> COCA_SEEDS = ITEMS.register("coca_seeds",
             () -> new ItemNameBlockItem(ModBlocks.COCA_PLANT.get(), new Item.Properties()));
 
@@ -54,6 +55,7 @@ public class ModItems {
             () -> new CocaineItem(new Item.Properties().stacksTo(64).food
                     (new FoodProperties.Builder().saturationMod(0.5f).nutrition(1).build())));
 
+    // for ethanol
     public static final RegistryObject<Item> CANE_JUICE = ITEMS.register("cane_juice",
             () -> new CaneJuiceItem(new Item.Properties().stacksTo(64)));
 
@@ -78,6 +80,7 @@ public class ModItems {
     public static final RegistryObject<Item> ETHANOL_BUCKET = ITEMS.register("ethanol_bucket",
             () -> new BucketItem(ModFluids.SOURCE_ETHANOL, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
+    // for vodka
     public static final RegistryObject<Item> POTATO_MASH = ITEMS.register("potato_mash",
             () -> new Item(new Item.Properties().stacksTo(64)));
 
@@ -115,12 +118,14 @@ public class ModItems {
     public static final RegistryObject<Item> VODKA_BUCKET = ITEMS.register("vodka_bucket",
             () -> new BucketItem(ModFluids.SOURCE_VODKA, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
+    // for chalk
     public static final RegistryObject<Item> TRONA_CHUNK = ITEMS.register("trona_chunk",
             () -> new Item(new Item.Properties().stacksTo(64)));
 
     public static final RegistryObject<Item> POWDERED_CHALK = ITEMS.register("powdered_chalk",
             () -> new Item(new Item.Properties().stacksTo(64)));
 
+    // for cannabis
     public static final RegistryObject<Item> CANNABIS_LEAF = ITEMS.register("cannabis_leaf",
             () -> new Item(new Item.Properties().stacksTo(64)));
 
@@ -137,6 +142,26 @@ public class ModItems {
             () -> new BluntItem(new Item.Properties().durability(64).defaultDurability(64).food(
                     new FoodProperties.Builder().saturationMod(1f).build()
             )));
+
+    // for opium
+    public static final RegistryObject<Item> OPIUM_SEEDS = ITEMS.register("opium_poppy_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.OPIUM_POPPY_PLANT.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> OPIUM_POPPY_POD = ITEMS.register("opium_seed_pod",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> OPIUM_LATEX_BOTTLE = ITEMS.register("opium_latex_bottle",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> OPIUM_LATEX_BUCKET = ITEMS.register("opium_latex_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_OPIUM_LATEX, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
+    public static final RegistryObject<Item> MORPHINE_SOLUTION_BOTTLE = ITEMS.register("morphine_solution_bottle",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> MORPHINE_SOLUTION_BUCKET = ITEMS.register("morphine_solution_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_MORPHINE_SOLUTION, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
 
     public static void register(IEventBus bus) {
         ITEMS.register(bus);
