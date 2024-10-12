@@ -38,6 +38,9 @@ public class Tab {
                         pOutput.accept(new ItemStack(ModItems.ROLLED_PAPER.get()));
                         pOutput.accept(new ItemStack(ModItems.BLUNT.get()));
 
+                        pOutput.accept(new ItemStack(ModItems.OPIUM_SEEDS.get()));
+                        pOutput.accept(new ItemStack(ModItems.OPIUM_POPPY_POD.get()));
+
                         pOutput.accept(new ItemStack(ModBlocks.COCAINE_BLOCK.get()));
 
                         pOutput.accept(new ItemStack(ModBlocks.FERMENTING_BARREL.get()));
@@ -62,6 +65,9 @@ public class Tab {
                         pOutput.accept(new ItemStack(ModItems.RAW_VODKA_BOTTLE.get()));
                         pOutput.accept(new ItemStack(ModItems.VODKA_BOTTLE.get()));
 
+                        pOutput.accept(new ItemStack(ModItems.OPIUM_LATEX_BOTTLE.get()));
+                        pOutput.accept(new ItemStack(ModItems.MORPHINE_SOLUTION_BOTTLE.get()));
+
                         pOutput.accept(new ItemStack(ModItems.CANE_JUICE_BUCKET.get()));
                         pOutput.accept(new ItemStack(ModItems.FERMENTED_CANE_JUICE_BUCKET.get()));
                         pOutput.accept(new ItemStack(ModItems.HEATED_FERMENTED_CANE_JUICE_BUCKET.get()));
@@ -72,6 +78,9 @@ public class Tab {
                         pOutput.accept(new ItemStack(ModItems.HEAT_FERM_POTATO_MASH_BUCKET.get()));
                         pOutput.accept(new ItemStack(ModItems.RAW_VODKA_BUCKET.get()));
                         pOutput.accept(new ItemStack(ModItems.VODKA_BUCKET.get()));
+
+                        pOutput.accept(new ItemStack(ModItems.OPIUM_LATEX_BUCKET.get()));
+                        pOutput.accept(new ItemStack(ModItems.MORPHINE_SOLUTION_BUCKET.get()));
                     })
                     .build());
 
