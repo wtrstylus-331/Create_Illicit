@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "amount": 500,
+      "fluid": "createillicititems:opium_latex"
+    },
+    {
+      "amount": 500,
+      "fluid": "createillicititems:ethanol"
+    }
+  ],
+  "results": [
+    {
+      "amount": 500,
+      "fluid": "createillicititems:morphine_solution"
+    }
+  ]
+}
