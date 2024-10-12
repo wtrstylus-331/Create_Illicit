@@ -17,31 +17,31 @@ public class OverdoseEffect extends MobEffect {
 
     @Override
     public void applyEffectTick(LivingEntity entity, int amplifier) {
-        if (entity instanceof Player player) {
-            if (!player.isDeadOrDying() && !player.level().isClientSide()) {
-                if (player.hasEffect(ModEffects.EUPHORIA.get())) {
-                    player.removeEffect(ModEffects.EUPHORIA.get());
+        if (!entity.isDeadOrDying() && !entity.level().isClientSide()) {
+            if (entity.hasEffect(ModEffects.EUPHORIA.get())) {
+                entity.removeEffect(ModEffects.EUPHORIA.get());
 
-                    if (player.hasEffect(MobEffects.MOVEMENT_SPEED)) {
-                        player.removeEffect(MobEffects.MOVEMENT_SPEED);
-                    }
+                if (entity.hasEffect(MobEffects.MOVEMENT_SPEED)) {
+                    entity.removeEffect(MobEffects.MOVEMENT_SPEED);
+                }
+            }
+
+            entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 200, 2) {
+                @Override
+                public boolean showIcon() {
+                    return false;
                 }
 
-                player.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 200, 2) {
-                    @Override
-                    public boolean showIcon() {
-                        return false;
-                    }
+                @Override
+                public boolean isVisible() {
+                    return false;
+                }
+            });
 
-                    @Override
-                    public boolean isVisible() {
-                        return false;
-                    }
-                });
-
-                player.hurt(ModDamageTypes.causeOverdoseDamage(player), 4.5f * ((float) amplifier / 2));
-            }
+            entity.hurt(ModDamageTypes.causeOverdoseDamage(entity), 4.5f * ((float) amplifier / 2));
         }
+
+        super.applyEffectTick(entity, amplifier);
     }
 
     @Override

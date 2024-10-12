@@ -16,41 +16,41 @@ public class StonedEffect extends MobEffect {
 
     @Override
     public void applyEffectTick(LivingEntity entity, int amplifier) {
-        if (entity instanceof Player player) {
-            if (!player.isDeadOrDying() && !player.level().isClientSide()) {
-                if (player.hasEffect(ModEffects.EUPHORIA.get())) {
-                    player.removeEffect(ModEffects.EUPHORIA.get());
+        if (!entity.isDeadOrDying() && !entity.level().isClientSide()) {
+            if (entity.hasEffect(ModEffects.EUPHORIA.get())) {
+                entity.removeEffect(ModEffects.EUPHORIA.get());
 
-                    if (player.hasEffect(MobEffects.MOVEMENT_SPEED)) {
-                        player.removeEffect(MobEffects.MOVEMENT_SPEED);
-                    }
+                if (entity.hasEffect(MobEffects.MOVEMENT_SPEED)) {
+                    entity.removeEffect(MobEffects.MOVEMENT_SPEED);
+                }
+            }
+
+            entity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 200, 0) {
+                @Override
+                public boolean showIcon() {
+                    return false;
                 }
 
-                player.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 200, 0) {
-                    @Override
-                    public boolean showIcon() {
-                        return false;
-                    }
+                @Override
+                public boolean isVisible() {
+                    return false;
+                }
+            });
 
-                    @Override
-                    public boolean isVisible() {
-                        return false;
-                    }
-                });
+            entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 200, 0) {
+                @Override
+                public boolean showIcon() {
+                    return false;
+                }
 
-                player.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 200, 0) {
-                    @Override
-                    public boolean showIcon() {
-                        return false;
-                    }
-
-                    @Override
-                    public boolean isVisible() {
-                        return false;
-                    }
-                });
-            }
+                @Override
+                public boolean isVisible() {
+                    return false;
+                }
+            });
         }
+
+        super.applyEffectTick(entity, amplifier);
     }
 
     @Override

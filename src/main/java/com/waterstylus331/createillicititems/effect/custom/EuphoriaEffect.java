@@ -15,25 +15,25 @@ public class EuphoriaEffect extends MobEffect {
 
     @Override
     public void applyEffectTick(LivingEntity entity, int amplifier) {
-        if (entity instanceof Player player) {
-            if (!player.isDeadOrDying() && !player.level().isClientSide()) {
-                if (player.hasEffect(ModEffects.STONED.get())) {
-                    return;
+        if (!entity.isDeadOrDying() && !entity.level().isClientSide()) {
+            if (entity.hasEffect(ModEffects.STONED.get())) {
+                return;
+            }
+
+            entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 0) {
+                @Override
+                public boolean showIcon() {
+                    return false;
                 }
 
-                player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 0) {
-                    @Override
-                    public boolean showIcon() {
-                        return false;
-                    }
-
-                    @Override
-                    public boolean isVisible() {
-                        return false;
-                    }
-                });
-            }
+                @Override
+                public boolean isVisible() {
+                    return false;
+                }
+            });
         }
+
+        super.applyEffectTick(entity, amplifier);
     }
 
     @Override
