@@ -1,10 +1,7 @@
 package com.waterstylus331.createillicititems.block;
 
 import com.waterstylus331.createillicititems.CreateIllicitItems;
-import com.waterstylus331.createillicititems.block.custom.CannabisCropBlock;
-import com.waterstylus331.createillicititems.block.custom.CocaCropBlock;
-import com.waterstylus331.createillicititems.block.custom.FermentingBarrelBlock;
-import com.waterstylus331.createillicititems.block.custom.WildCropBlock;
+import com.waterstylus331.createillicititems.block.custom.*;
 import com.waterstylus331.createillicititems.fluids.ModFluids;
 import com.waterstylus331.createillicititems.item.ModItems;
 import net.minecraft.core.BlockPos;
@@ -47,6 +44,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> WILD_CANNABIS_PLANT = BLOCKS.register("wild_cannabis_crop",
             () -> new WildCropBlock(MobEffects.CONFUSION,6, BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
+    public static final RegistryObject<Block> OPIUM_POPPY_PLANT = BLOCKS.register("opium_poppy_plant",
+            () -> new OpiumPoppyBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+
+    public static final RegistryObject<Block> WILD_OPIUM_POPPY = BLOCKS.register("wild_opium_poppy_plant",
+            () -> new WildCropBlock(MobEffects.CONFUSION,6, BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+
     public static final RegistryObject<Block> COCAINE_BLOCK = registerBlock("cocaine_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SAND).noOcclusion()));
 
@@ -75,6 +78,9 @@ public class ModBlocks {
     public static final RegistryObject<LiquidBlock> ETHANOL_BLOCK = registerBlock("ethanol_block",
             () -> new LiquidBlock(ModFluids.SOURCE_ETHANOL, BlockBehaviour.Properties.copy(Blocks.WATER)));
 
+    public static final RegistryObject<Block> DRIED_ETHANOL_BLOCK = registerBlock("dried_ethanol_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIORITE).strength(1.5f).requiresCorrectToolForDrops()));
+
     // for vodka
     public static final RegistryObject<LiquidBlock> POTATO_MASH_JUICE_BLOCK = registerBlock("potato_mash_juice_block",
             () -> new LiquidBlock(ModFluids.SOURCE_POTATO_MASH_JUICE, BlockBehaviour.Properties.copy(Blocks.WATER)));
@@ -100,6 +106,13 @@ public class ModBlocks {
 
     public static final RegistryObject<LiquidBlock> VODKA_BLOCK = registerBlock("vodka_block",
             () -> new LiquidBlock(ModFluids.SOURCE_VODKA, BlockBehaviour.Properties.copy(Blocks.WATER)));
+
+    // for opium
+    public static final RegistryObject<LiquidBlock> OPIUM_LATEX_BLOCK = registerBlock("opium_latex_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_OPIUM_LATEX, BlockBehaviour.Properties.copy(Blocks.WATER)));
+
+    public static final RegistryObject<LiquidBlock> MORPHINE_SOLUTION_BLOCK = registerBlock("morphine_solution_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_MORPHINE_SOLUTION, BlockBehaviour.Properties.copy(Blocks.WATER)));
 
     // for chalk
     public static final RegistryObject<DropExperienceBlock> TRONA_ORE = registerBlock("trona_ore",
