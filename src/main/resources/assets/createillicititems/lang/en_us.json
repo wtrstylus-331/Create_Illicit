@@ -42,8 +42,16 @@
   "item.createillicititems.incomplete_blunt": "Incomplete Blunt",
   "item.createillicititems.blunt": "Blunt",
 
+  "item.createillicititems.opium_poppy_seeds": "Opium Poppy Seeds",
+  "item.createillicititems.opium_seed_pod": "Opium Poppy Seeds Pod",
+  "item.createillicititems.opium_latex_bottle": "Opium Latex Bottle",
+  "item.createillicititems.opium_latex_bucket": "Opium Latex Bucket",
+  "item.createillicititems.morphine_solution_bottle": "Morphine Solution Bottle",
+  "item.createillicititems.morphine_solution_bucket": "Morphine Solution Bucket",
+
   "block.createillicititems.fermenting_barrel": "Fermenting Barrel",
   "block.createillicititems.dried_cane_juice_block": "Dried Cane Juice Block",
+  "block.createillicititems.dried_ethanol_block": "Dried Ethanol Block",
   "block.createillicititems.cocaine_block": "Cocaine Block",
   "block.createillicititems.trona_ore": "Trona Ore",
   "block.createillicititems.deepslate_trona_ore": "Deepslate Trona Ore",
@@ -58,6 +66,9 @@
   "fluid_type.createillicititems.heated_fermented_potato_mash_juice_fluid": "Heated Fermented Potato Mash Juice",
   "fluid_type.createillicititems.raw_vodka_fluid": "Raw Vodka",
   "fluid_type.createillicititems.vodka_fluid": "Vodka",
+
+  "fluid_type.createillicititems.opium_latex_fluid": "Opium Latex",
+  "fluid_type.createillicititems.morphine_solution_fluid": "Morphine Solution",
 
   "effect.createillicititems.euphoria": "Euphoria",
   "effect.createillicititems.stoned": "Stoned",
