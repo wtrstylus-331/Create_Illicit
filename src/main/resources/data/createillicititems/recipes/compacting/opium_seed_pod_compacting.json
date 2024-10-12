@@ -1,0 +1,24 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "createillicititems:opium_seed_pod"
+    }
+  ],
+  "results": [
+    {
+      "amount": 75,
+      "fluid": "createillicititems:opium_latex",
+      "nbt": {}
+    },
+    {
+      "count": 3,
+      "item": "createillicititems:opium_poppy_seeds"
+    },
+    {
+      "count": 2,
+      "chance": 0.50,
+      "item": "createillicititems:opium_poppy_seeds"
+    }
+  ]
+}
