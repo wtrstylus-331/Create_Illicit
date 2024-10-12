@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:flower_forest",
+    "minecraft:meadow"
+  ],
+  "features": [
+    "createillicititems:opium_poppy_placed"
+  ],
+  "step": "vegetal_decoration"
+}
