@@ -1,7 +1,8 @@
 {
   "entries": [
     "createillicititems:coca_seeds_from_jungle_temple",
-    "createillicititems:cannabis_seeds_from_jungle_temple"
+    "createillicititems:cannabis_seeds_from_jungle_temple",
+    "createillicititems:opium_poppy_seeds_from_jungle_temple"
   ],
   "replace": false
 }
