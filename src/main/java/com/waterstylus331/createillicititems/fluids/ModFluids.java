@@ -74,6 +74,19 @@ public class ModFluids {
     public static final RegistryObject<FlowingFluid> FLOWING_VODKA = FLUIDS.register("flowing_vodka",
             () -> new ForgeFlowingFluid.Flowing(ModFluids.VODKA_PROPS));
 
+    // for opium
+    public static final RegistryObject<FlowingFluid> SOURCE_OPIUM_LATEX = FLUIDS.register("opium_latex",
+            () -> new ForgeFlowingFluid.Source(ModFluids.OPIUM_LATEX_PROPS));
+
+    public static final RegistryObject<FlowingFluid> FLOWING_OPIUM_LATEX = FLUIDS.register("flowing_opium_latex",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.OPIUM_LATEX_PROPS));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MORPHINE_SOLUTION = FLUIDS.register("morphine_solution",
+            () -> new ForgeFlowingFluid.Source(ModFluids.MORPHINE_SOLUTION_PROPS));
+
+    public static final RegistryObject<FlowingFluid> FLOWING_MORPHINE_SOLUTION = FLUIDS.register("flowing_morphine_solution",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.MORPHINE_SOLUTION_PROPS));
+
     // for ethanol
     public static final ForgeFlowingFluid.Properties CANE_JUICE_PROPS = new ForgeFlowingFluid.Properties(
             FluidTypes.CANE_JUICE_FLUID_TYPE, SOURCE_CANE_JUICE, FLOWING_CANE_JUICE)
@@ -139,14 +152,30 @@ public class ModFluids {
             .block(ModBlocks.VODKA_BLOCK)
             .bucket(ModItems.VODKA_BUCKET);
 
+    // for opium
+    public static final ForgeFlowingFluid.Properties OPIUM_LATEX_PROPS = new ForgeFlowingFluid.Properties(
+            FluidTypes.OPIUM_LATEX_FLUID_TYPE, SOURCE_OPIUM_LATEX, FLOWING_OPIUM_LATEX)
+            .slopeFindDistance(2)
+            .levelDecreasePerBlock(2)
+            .block(ModBlocks.OPIUM_LATEX_BLOCK)
+            .bucket(ModItems.OPIUM_LATEX_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties MORPHINE_SOLUTION_PROPS = new ForgeFlowingFluid.Properties(
+            FluidTypes.MORPHINE_SOLUTION_FLUID_TYPE, SOURCE_MORPHINE_SOLUTION, FLOWING_MORPHINE_SOLUTION)
+            .slopeFindDistance(2)
+            .levelDecreasePerBlock(2)
+            .block(ModBlocks.MORPHINE_SOLUTION_BLOCK)
+            .bucket(ModItems.MORPHINE_SOLUTION_BUCKET);
+
+    // fluid interactions
     public static void registerInteractions() {
         FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new FluidInteractionRegistry.InteractionInformation(
                 SOURCE_ETHANOL.get().getFluidType(),
                 fluidState -> {
                     if (fluidState.isSource()) {
-                        return Blocks.DIORITE.defaultBlockState();
+                        return ModBlocks.DRIED_ETHANOL_BLOCK.get().defaultBlockState();
                     } else {
-                        return Blocks.DIORITE.defaultBlockState();
+                        return ModBlocks.DRIED_ETHANOL_BLOCK.get().defaultBlockState();
                     }
                 }
         ));

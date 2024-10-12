@@ -21,9 +21,13 @@ public class FluidTypes {
 
     public static final ResourceLocation TRANSLUCENT_STILL = new ResourceLocation(CreateIllicitItems.MODID,"block/translucent_still");
     public static final ResourceLocation TRANSLUCENT_FLOW = new ResourceLocation(CreateIllicitItems.MODID,"block/translucent_flow");
+    public static final ResourceLocation DARK_TRANSLUCENT_STILL = new ResourceLocation(CreateIllicitItems.MODID,"block/darker_translucent_still");
+    public static final ResourceLocation DARK_TRANSLUCENT_FLOW = new ResourceLocation(CreateIllicitItems.MODID,"block/darker_translucent_flow");
     public static final ResourceLocation IN_TRANSLUCENT = new ResourceLocation(CreateIllicitItems.MODID,"fluid/in_translucent");
 
     public static final ResourceLocation POTATO_MASH_JUICE = new ResourceLocation(CreateIllicitItems.MODID,"fluid/in_potato_mash_juice");
+
+    public static final ResourceLocation MORPHINE = new ResourceLocation(CreateIllicitItems.MODID,"fluid/in_morphine");
 
     public static final DeferredRegister<FluidType> FLUID_TYPES =
             DeferredRegister.create(ForgeRegistries.Keys.FLUID_TYPES, CreateIllicitItems.MODID);
@@ -71,6 +75,16 @@ public class FluidTypes {
     public static final RegistryObject<FluidType> VODKA_FLUID_TYPE = register("vodka_fluid",
             TRANSLUCENT_STILL, TRANSLUCENT_FLOW, IN_TRANSLUCENT, 0x50F2F2F2, new Vector3f(242f / 255f, 242f / 255f, 242f / 255f),
             FluidType.Properties.create().lightLevel(1).density(8).viscosity(3).sound(SoundAction.get("drink"),
+                    SoundEvents.HONEY_DRINK).canDrown(true).canSwim(false).supportsBoating(false));
+
+    public static final RegistryObject<FluidType> OPIUM_LATEX_FLUID_TYPE = register("opium_latex_fluid",
+            DEFAULT_STILL, DEFAULT_FLOW, IN_TRANSLUCENT, 0xFFEFEFEF, new Vector3f(239f / 255f, 239f / 255f, 239f / 255f),
+            FluidType.Properties.create().lightLevel(1).density(8).viscosity(4).sound(SoundAction.get("drink"),
+                    SoundEvents.HONEY_DRINK).canDrown(true).canSwim(false).supportsBoating(false));
+
+    public static final RegistryObject<FluidType> MORPHINE_SOLUTION_FLUID_TYPE = register("morphine_solution_fluid",
+            DARK_TRANSLUCENT_STILL, DARK_TRANSLUCENT_FLOW, MORPHINE, 0x904C2F19, new Vector3f(76f / 255f, 47f / 255f, 25f / 255f),
+            FluidType.Properties.create().lightLevel(1).density(8).viscosity(4).sound(SoundAction.get("drink"),
                     SoundEvents.HONEY_DRINK).canDrown(true).canSwim(false).supportsBoating(false));
 
     private static RegistryObject<FluidType> register(String name, ResourceLocation still, ResourceLocation flow, ResourceLocation in,
