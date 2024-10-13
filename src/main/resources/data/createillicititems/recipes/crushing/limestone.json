@@ -2,7 +2,7 @@
   "type": "create:milling",
   "ingredients": [
     {
-      "item": "createillicititems:trona_chunk"
+      "item": "create:limestone"
     }
   ],
   "processingTime": 250,
