@@ -36,6 +36,9 @@
   "item.createillicititems.trona_chunk": "Trona Chunk",
   "item.createillicititems.powdered_chalk": "Powdered Chalk",
 
+  "item.createillicititems.sodium_bicarbonate": "Sodium Bicarbonate",
+  "item.createillicititems.sodium_carbonate": "Sodium Carbonate",
+
   "item.createillicititems.cannabis_leaf": "Cannabis Leaf",
   "item.createillicititems.cannabis_seeds": "Cannabis Seeds",
   "item.createillicititems.rolled_paper": "Rolled Paper",
@@ -69,6 +72,7 @@
 
   "fluid_type.createillicititems.opium_latex_fluid": "Opium Latex",
   "fluid_type.createillicititems.morphine_solution_fluid": "Morphine Solution",
+  "fluid_type.createillicititems.codeine_solution_fluid": "Codeine Solution",
 
   "effect.createillicititems.euphoria": "Euphoria",
   "effect.createillicititems.stoned": "Stoned",
