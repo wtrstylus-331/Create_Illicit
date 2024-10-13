@@ -125,6 +125,13 @@ public class ModItems {
     public static final RegistryObject<Item> POWDERED_CHALK = ITEMS.register("powdered_chalk",
             () -> new Item(new Item.Properties().stacksTo(64)));
 
+    // for sodium
+    public static final RegistryObject<Item> SODIUM_BICARBONATE = ITEMS.register("sodium_bicarbonate",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> SODIUM_CARBONATE = ITEMS.register("sodium_carbonate",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+
     // for cannabis
     public static final RegistryObject<Item> CANNABIS_LEAF = ITEMS.register("cannabis_leaf",
             () -> new Item(new Item.Properties().stacksTo(64)));
@@ -162,6 +169,11 @@ public class ModItems {
     public static final RegistryObject<Item> MORPHINE_SOLUTION_BUCKET = ITEMS.register("morphine_solution_bucket",
             () -> new BucketItem(ModFluids.SOURCE_MORPHINE_SOLUTION, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
+    public static final RegistryObject<Item> CODEINE_SOLUTION_BOTTLE = ITEMS.register("codeine_solution_bottle",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> CODEINE_SOLUTION_BUCKET = ITEMS.register("codeine_solution_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_CODEINE_SOLUTION, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
     public static void register(IEventBus bus) {
         ITEMS.register(bus);
