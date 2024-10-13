@@ -87,6 +87,12 @@ public class ModFluids {
     public static final RegistryObject<FlowingFluid> FLOWING_MORPHINE_SOLUTION = FLUIDS.register("flowing_morphine_solution",
             () -> new ForgeFlowingFluid.Flowing(ModFluids.MORPHINE_SOLUTION_PROPS));
 
+    public static final RegistryObject<FlowingFluid> SOURCE_CODEINE_SOLUTION = FLUIDS.register("codeine_solution",
+            () -> new ForgeFlowingFluid.Source(ModFluids.MORPHINE_SOLUTION_PROPS));
+
+    public static final RegistryObject<FlowingFluid> FLOWING_CODEINE_SOLUTION = FLUIDS.register("flowing_codeine_solution",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.MORPHINE_SOLUTION_PROPS));
+
     // for ethanol
     public static final ForgeFlowingFluid.Properties CANE_JUICE_PROPS = new ForgeFlowingFluid.Properties(
             FluidTypes.CANE_JUICE_FLUID_TYPE, SOURCE_CANE_JUICE, FLOWING_CANE_JUICE)
@@ -166,6 +172,13 @@ public class ModFluids {
             .levelDecreasePerBlock(2)
             .block(ModBlocks.MORPHINE_SOLUTION_BLOCK)
             .bucket(ModItems.MORPHINE_SOLUTION_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties CODEINE_SOLUTION_PROPS = new ForgeFlowingFluid.Properties(
+            FluidTypes.CODEINE_SOLUTION_FLUID_TYPE, SOURCE_CODEINE_SOLUTION, FLOWING_CODEINE_SOLUTION)
+            .slopeFindDistance(2)
+            .levelDecreasePerBlock(2)
+            .block(ModBlocks.CODEINE_SOLUTION_BLOCK)
+            .bucket(ModItems.CODEINE_SOLUTION_BUCKET);
 
     // fluid interactions
     public static void registerInteractions() {

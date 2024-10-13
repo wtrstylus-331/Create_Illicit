@@ -87,6 +87,11 @@ public class FluidTypes {
             FluidType.Properties.create().lightLevel(1).density(8).viscosity(4).sound(SoundAction.get("drink"),
                     SoundEvents.HONEY_DRINK).canDrown(true).canSwim(false).supportsBoating(false));
 
+    public static final RegistryObject<FluidType> CODEINE_SOLUTION_FLUID_TYPE = register("codeine_solution_fluid",
+            DARK_TRANSLUCENT_STILL, DARK_TRANSLUCENT_FLOW, MORPHINE, 0x806B451D, new Vector3f(107f / 255f, 69f / 255f, 29f / 255f),
+            FluidType.Properties.create().lightLevel(1).density(8).viscosity(4).sound(SoundAction.get("drink"),
+                    SoundEvents.HONEY_DRINK).canDrown(true).canSwim(false).supportsBoating(false));
+
     private static RegistryObject<FluidType> register(String name, ResourceLocation still, ResourceLocation flow, ResourceLocation in,
             int tintColor, Vector3f fogColor, FluidType.Properties properties) {
         return FLUID_TYPES.register(name, () -> new ModFluidType(still, flow, in,
