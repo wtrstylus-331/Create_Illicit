@@ -12,8 +12,12 @@
   ],
   "results": [
     {
-      "amount": 500,
+      "amount": 450,
       "fluid": "createillicititems:morphine_solution"
+    },
+    {
+      "amount": 250,
+      "fluid": "createillicititems:codeine_solution"
     }
   ]
 }
