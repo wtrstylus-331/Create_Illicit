@@ -92,6 +92,16 @@ public class FluidTypes {
             FluidType.Properties.create().lightLevel(1).density(8).viscosity(4).sound(SoundAction.get("drink"),
                     SoundEvents.HONEY_DRINK).canDrown(true).canSwim(false).supportsBoating(false));
 
+    public static final RegistryObject<FluidType> PURE_CODEINE_FLUID_TYPE = register("pure_codeine_fluid",
+            DARK_TRANSLUCENT_STILL, DARK_TRANSLUCENT_FLOW, MORPHINE, 0x805B3A19, new Vector3f(91f / 255f, 58f / 255f, 25f / 255f),
+            FluidType.Properties.create().lightLevel(1).density(8).viscosity(4).sound(SoundAction.get("drink"),
+                    SoundEvents.HONEY_DRINK).canDrown(true).canSwim(false).supportsBoating(false));
+
+    public static final RegistryObject<FluidType> IMPURE_SEDIMENT_FLUID_TYPE = register("impure_sediment_fluid",
+            DARK_TRANSLUCENT_STILL, DARK_TRANSLUCENT_FLOW, MORPHINE, 0x9551482B, new Vector3f(81 / 255f, 72f / 255f, 43f / 255f),
+            FluidType.Properties.create().lightLevel(1).density(10).viscosity(6).sound(SoundAction.get("drink"),
+                    SoundEvents.HONEY_DRINK).canDrown(true).canSwim(false).supportsBoating(false));
+
     private static RegistryObject<FluidType> register(String name, ResourceLocation still, ResourceLocation flow, ResourceLocation in,
             int tintColor, Vector3f fogColor, FluidType.Properties properties) {
         return FLUID_TYPES.register(name, () -> new ModFluidType(still, flow, in,

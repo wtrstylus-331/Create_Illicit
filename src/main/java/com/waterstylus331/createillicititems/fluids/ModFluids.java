@@ -88,10 +88,22 @@ public class ModFluids {
             () -> new ForgeFlowingFluid.Flowing(ModFluids.MORPHINE_SOLUTION_PROPS));
 
     public static final RegistryObject<FlowingFluid> SOURCE_CODEINE_SOLUTION = FLUIDS.register("codeine_solution",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MORPHINE_SOLUTION_PROPS));
+            () -> new ForgeFlowingFluid.Source(ModFluids.CODEINE_SOLUTION_PROPS));
 
     public static final RegistryObject<FlowingFluid> FLOWING_CODEINE_SOLUTION = FLUIDS.register("flowing_codeine_solution",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MORPHINE_SOLUTION_PROPS));
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.CODEINE_SOLUTION_PROPS));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_PURE_CODEINE = FLUIDS.register("pure_codeine",
+            () -> new ForgeFlowingFluid.Source(ModFluids.PURE_CODEINE_PROPS));
+
+    public static final RegistryObject<FlowingFluid> FLOWING_PURE_CODEINE = FLUIDS.register("flowing_pure_codeine",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.PURE_CODEINE_PROPS));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_IMPURE_SEDIMENT = FLUIDS.register("impure_sediment",
+            () -> new ForgeFlowingFluid.Source(ModFluids.IMPURE_SEDIMENT_PROPS));
+
+    public static final RegistryObject<FlowingFluid> FLOWING_IMPURE_SEDIMENT = FLUIDS.register("flowing_impure_sediment",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.IMPURE_SEDIMENT_PROPS));
 
     // for ethanol
     public static final ForgeFlowingFluid.Properties CANE_JUICE_PROPS = new ForgeFlowingFluid.Properties(
@@ -179,6 +191,20 @@ public class ModFluids {
             .levelDecreasePerBlock(2)
             .block(ModBlocks.CODEINE_SOLUTION_BLOCK)
             .bucket(ModItems.CODEINE_SOLUTION_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties PURE_CODEINE_PROPS = new ForgeFlowingFluid.Properties(
+            FluidTypes.PURE_CODEINE_FLUID_TYPE, SOURCE_PURE_CODEINE, FLOWING_PURE_CODEINE)
+            .slopeFindDistance(2)
+            .levelDecreasePerBlock(2)
+            .block(ModBlocks.PURE_CODEINE_BLOCK)
+            .bucket(ModItems.PURE_CODEINE_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties IMPURE_SEDIMENT_PROPS = new ForgeFlowingFluid.Properties(
+            FluidTypes.IMPURE_SEDIMENT_FLUID_TYPE, SOURCE_IMPURE_SEDIMENT, FLOWING_IMPURE_SEDIMENT)
+            .slopeFindDistance(1)
+            .levelDecreasePerBlock(1)
+            .block(ModBlocks.IMPURE_SEDIMENT_BLOCK)
+            .bucket(ModItems.IMPURE_SEDIMENT_BUCKET);
 
     // fluid interactions
     public static void registerInteractions() {
