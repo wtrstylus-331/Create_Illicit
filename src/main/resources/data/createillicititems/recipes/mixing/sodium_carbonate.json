@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createillicititems:sodium_bicarbonate"
+    }
+  ],
+  "results": [
+    {
+      "item": "createillicititems:sodium_carbonate"
+    },
+    {
+      "amount": 75,
+      "fluid": "minecraft:water",
+      "nbt": {}
+    }
+  ]
+}

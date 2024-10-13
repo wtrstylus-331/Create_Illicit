@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createillicititems:trona_chunk"
+    },
+    {
+      "item": "createillicititems:trona_chunk"
+    },
+    {
+      "amount": 100,
+      "fluid": "minecraft:water",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "createillicititems:sodium_bicarbonate"
+    }
+  ]
+}
