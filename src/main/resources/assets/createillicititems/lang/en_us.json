@@ -51,6 +51,12 @@
   "item.createillicititems.opium_latex_bucket": "Opium Latex Bucket",
   "item.createillicititems.morphine_solution_bottle": "Morphine Solution Bottle",
   "item.createillicititems.morphine_solution_bucket": "Morphine Solution Bucket",
+  "item.createillicititems.codeine_solution_bottle": "Codeine Solution Bottle",
+  "item.createillicititems.codeine_solution_bucket": "Codeine Solution Bucket",
+  "item.createillicititems.pure_codeine_bottle": "Pure Codeine Bottle",
+  "item.createillicititems.pure_codeine_bucket": "Pure Codeine Bucket",
+  "item.createillicititems.impure_sediment_bottle": "Impure Sediment Bottle",
+  "item.createillicititems.impure_sediment_bucket": "Impure Sediment Bucket",
 
   "block.createillicititems.fermenting_barrel": "Fermenting Barrel",
   "block.createillicititems.dried_cane_juice_block": "Dried Cane Juice Block",
@@ -73,6 +79,8 @@
   "fluid_type.createillicititems.opium_latex_fluid": "Opium Latex",
   "fluid_type.createillicititems.morphine_solution_fluid": "Morphine Solution",
   "fluid_type.createillicititems.codeine_solution_fluid": "Codeine Solution",
+  "fluid_type.createillicititems.pure_codeine_fluid": "Pure Codeine",
+  "fluid_type.createillicititems.impure_sediment_fluid": "Impure Sediment",
 
   "effect.createillicititems.euphoria": "Euphoria",
   "effect.createillicititems.stoned": "Stoned",
