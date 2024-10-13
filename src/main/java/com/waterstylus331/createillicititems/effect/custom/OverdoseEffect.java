@@ -2,13 +2,11 @@ package com.waterstylus331.createillicititems.effect.custom;
 
 import com.waterstylus331.createillicititems.effect.ModEffects;
 import com.waterstylus331.createillicititems.misc.ModDamageTypes;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Player;
 
 public class OverdoseEffect extends MobEffect {
     public OverdoseEffect(MobEffectCategory category) {
@@ -38,7 +36,12 @@ public class OverdoseEffect extends MobEffect {
                 }
             });
 
-            entity.hurt(ModDamageTypes.causeOverdoseDamage(entity), 4.5f * ((float) amplifier / 2));
+            double posX = (Math.random() - 0.5) * 2;
+            double posZ = (Math.random() - 0.5) * 2;
+            entity.setDeltaMovement(posX, entity.getDeltaMovement().y, posZ);
+            entity.hurtMarked = true;
+
+            entity.hurt(ModDamageTypes.causeOverdoseDamage(entity), 4f * ((float) amplifier / 2));
         }
 
         super.applyEffectTick(entity, amplifier);
