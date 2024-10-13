@@ -24,6 +24,8 @@ public class Tab {
                         pOutput.accept(new ItemStack(ModItems.COCA_PASTE.get()));
                         pOutput.accept(new ItemStack(ModItems.COCA_PASTE_MIXTURE.get()));
                         pOutput.accept(new ItemStack(ModItems.TRONA_CHUNK.get()));
+                        pOutput.accept(new ItemStack(ModItems.SODIUM_BICARBONATE.get()));
+                        pOutput.accept(new ItemStack(ModItems.SODIUM_CARBONATE.get()));
                         pOutput.accept(new ItemStack(ModItems.POWDERED_CHALK.get()));
                         pOutput.accept(new ItemStack(ModItems.CRUDE_COCA.get()));
                         pOutput.accept(new ItemStack(ModItems.CRUDE_COCA_MIXTURE.get()));
@@ -67,6 +69,7 @@ public class Tab {
 
                         pOutput.accept(new ItemStack(ModItems.OPIUM_LATEX_BOTTLE.get()));
                         pOutput.accept(new ItemStack(ModItems.MORPHINE_SOLUTION_BOTTLE.get()));
+                        pOutput.accept(new ItemStack(ModItems.CODEINE_SOLUTION_BOTTLE.get()));
 
                         pOutput.accept(new ItemStack(ModItems.CANE_JUICE_BUCKET.get()));
                         pOutput.accept(new ItemStack(ModItems.FERMENTED_CANE_JUICE_BUCKET.get()));
@@ -81,6 +84,7 @@ public class Tab {
 
                         pOutput.accept(new ItemStack(ModItems.OPIUM_LATEX_BUCKET.get()));
                         pOutput.accept(new ItemStack(ModItems.MORPHINE_SOLUTION_BUCKET.get()));
+                        pOutput.accept(new ItemStack(ModItems.CODEINE_SOLUTION_BUCKET.get()));
                     })
                     .build());
 

@@ -24,6 +24,8 @@
     "createillicititems:opium_latex_bottle",
     "createillicititems:opium_latex_bucket",
     "createillicititems:morphine_solution_bottle",
-    "createillicititems:morphine_solution_bucket"
+    "createillicititems:morphine_solution_bucket",
+    "createillicititems:codeine_solution_bottle",
+    "createillicititems:codeine_solution_bucket"
   ]
 }
