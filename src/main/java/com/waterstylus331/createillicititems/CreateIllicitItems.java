@@ -72,6 +72,10 @@ public class CreateIllicitItems
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_RAW_VODKA.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_VODKA.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_VODKA.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_MORPHINE_SOLUTION.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_MORPHINE_SOLUTION.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_CODEINE_SOLUTION.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_CODEINE_SOLUTION.get(), RenderType.translucent());
         });
     }
 
