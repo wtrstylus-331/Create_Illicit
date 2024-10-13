@@ -1,0 +1,26 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createillicititems:sodium_carbonate"
+    },
+    {
+      "item": "createillicititems:sodium_carbonate"
+    },
+    {
+      "amount": 250,
+      "fluid": "createillicititems:codeine_solution"
+    }
+  ],
+  "results": [
+    {
+      "amount": 200,
+      "fluid": "createillicititems:pure_codeine"
+    },
+    {
+      "amount": 75,
+      "fluid": "createillicititems:impure_sediment"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "amount": 1000,
+      "fluid": "createillicititems:pure_codeine",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "createillicititems:pure_codeine_bucket"
+    }
+  ]
+}
