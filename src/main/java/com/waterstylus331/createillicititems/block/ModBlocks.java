@@ -114,6 +114,9 @@ public class ModBlocks {
     public static final RegistryObject<LiquidBlock> MORPHINE_SOLUTION_BLOCK = registerBlock("morphine_solution_block",
             () -> new LiquidBlock(ModFluids.SOURCE_MORPHINE_SOLUTION, BlockBehaviour.Properties.copy(Blocks.WATER)));
 
+    public static final RegistryObject<LiquidBlock> CODEINE_SOLUTION_BLOCK = registerBlock("codeine_solution_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_CODEINE_SOLUTION, BlockBehaviour.Properties.copy(Blocks.WATER)));
+
     // for chalk
     public static final RegistryObject<DropExperienceBlock> TRONA_ORE = registerBlock("trona_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
