@@ -175,6 +175,18 @@ public class ModItems {
     public static final RegistryObject<Item> CODEINE_SOLUTION_BUCKET = ITEMS.register("codeine_solution_bucket",
             () -> new BucketItem(ModFluids.SOURCE_CODEINE_SOLUTION, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
+    public static final RegistryObject<Item> PURE_CODEINE_BOTTLE = ITEMS.register("pure_codeine_bottle",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> PURE_CODEINE_BUCKET = ITEMS.register("pure_codeine_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_PURE_CODEINE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
+    public static final RegistryObject<Item> IMPURE_SEDIMENT_BOTTLE = ITEMS.register("impure_sediment_bottle",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> IMPURE_SEDIMENT_BUCKET = ITEMS.register("impure_sediment_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_IMPURE_SEDIMENT, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
     public static void register(IEventBus bus) {
         ITEMS.register(bus);
     }
