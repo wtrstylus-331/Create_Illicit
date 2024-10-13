@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "amount": 250,
+      "fluid": "createillicititems:codeine_solution",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "createillicititems:codeine_solution_bottle"
+    }
+  ]
+}
