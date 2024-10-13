@@ -68,14 +68,20 @@ public class CreateIllicitItems
 
             ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_ETHANOL.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_ETHANOL.get(), RenderType.translucent());
+
             ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_RAW_VODKA.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_RAW_VODKA.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_VODKA.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_VODKA.get(), RenderType.translucent());
+
             ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_MORPHINE_SOLUTION.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_MORPHINE_SOLUTION.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_CODEINE_SOLUTION.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_CODEINE_SOLUTION.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_PURE_CODEINE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_PURE_CODEINE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_IMPURE_SEDIMENT.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_IMPURE_SEDIMENT.get(), RenderType.translucent());
         });
     }
 
