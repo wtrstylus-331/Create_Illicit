@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "amount": 100,
+      "fluid": "createillicititems:pure_codeine"
+    },
+    {
+      "amount": 50,
+      "fluid": "create:honey"
+    }
+  ],
+  "results": [
+    {
+      "amount": 150,
+      "fluid": "createillicititems:cough_syrup"
+    }
+  ]
+}
