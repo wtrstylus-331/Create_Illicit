@@ -82,6 +82,9 @@ public class CreateIllicitItems
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_PURE_CODEINE.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_IMPURE_SEDIMENT.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_IMPURE_SEDIMENT.get(), RenderType.translucent());
+
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_COUGH_SYRUP.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_COUGH_SYRUP.get(), RenderType.translucent());
         });
     }
 
