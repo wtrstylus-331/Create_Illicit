@@ -26,6 +26,13 @@
     "createillicititems:morphine_solution_bottle",
     "createillicititems:morphine_solution_bucket",
     "createillicititems:codeine_solution_bottle",
-    "createillicititems:codeine_solution_bucket"
+    "createillicititems:codeine_solution_bucket",
+    "createillicititems:pure_codeine_bottle",
+    "createillicititems:pure_codeine_bucket",
+    "createillicititems:impure_sediment_bottle",
+    "createillicititems:impure_sediment_bucket",
+
+    "createillicititems:cough_syrup_bottle",
+    "createillicititems:cough_syrup_bucket"
   ]
 }
