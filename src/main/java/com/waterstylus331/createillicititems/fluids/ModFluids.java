@@ -105,6 +105,12 @@ public class ModFluids {
     public static final RegistryObject<FlowingFluid> FLOWING_IMPURE_SEDIMENT = FLUIDS.register("flowing_impure_sediment",
             () -> new ForgeFlowingFluid.Flowing(ModFluids.IMPURE_SEDIMENT_PROPS));
 
+    public static final RegistryObject<FlowingFluid> SOURCE_COUGH_SYRUP = FLUIDS.register("cough_syrup",
+            () -> new ForgeFlowingFluid.Source(ModFluids.COUGH_SYRUP_PROPS));
+
+    public static final RegistryObject<FlowingFluid> FLOWING_COUGH_SYRUP = FLUIDS.register("flowing_cough_syrup",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.COUGH_SYRUP_PROPS));
+
     // for ethanol
     public static final ForgeFlowingFluid.Properties CANE_JUICE_PROPS = new ForgeFlowingFluid.Properties(
             FluidTypes.CANE_JUICE_FLUID_TYPE, SOURCE_CANE_JUICE, FLOWING_CANE_JUICE)
@@ -205,6 +211,14 @@ public class ModFluids {
             .levelDecreasePerBlock(1)
             .block(ModBlocks.IMPURE_SEDIMENT_BLOCK)
             .bucket(ModItems.IMPURE_SEDIMENT_BUCKET);
+
+    // cough syrup
+    public static final ForgeFlowingFluid.Properties COUGH_SYRUP_PROPS = new ForgeFlowingFluid.Properties(
+            FluidTypes.COUGH_SYRUP_FLUID_TYPE, SOURCE_COUGH_SYRUP, FLOWING_COUGH_SYRUP)
+            .slopeFindDistance(1)
+            .levelDecreasePerBlock(1)
+            .block(ModBlocks.COUGH_SYRUP_BLOCK)
+            .bucket(ModItems.COUGH_SYRUP_BUCKET);
 
     // fluid interactions
     public static void registerInteractions() {

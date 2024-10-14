@@ -47,6 +47,7 @@
 
   "item.createillicititems.opium_poppy_seeds": "Opium Poppy Seeds",
   "item.createillicititems.opium_seed_pod": "Opium Poppy Seeds Pod",
+
   "item.createillicititems.opium_latex_bottle": "Opium Latex Bottle",
   "item.createillicititems.opium_latex_bucket": "Opium Latex Bucket",
   "item.createillicititems.morphine_solution_bottle": "Morphine Solution Bottle",
@@ -57,6 +58,8 @@
   "item.createillicititems.pure_codeine_bucket": "Pure Codeine Bucket",
   "item.createillicititems.impure_sediment_bottle": "Impure Sediment Bottle",
   "item.createillicititems.impure_sediment_bucket": "Impure Sediment Bucket",
+  "item.createillicititems.cough_syrup_bottle": "Cough Syrup Bottle",
+  "item.createillicititems.cough_syrup_bucket": "Cough Syrup Bucket",
 
   "block.createillicititems.fermenting_barrel": "Fermenting Barrel",
   "block.createillicititems.dried_cane_juice_block": "Dried Cane Juice Block",
@@ -81,6 +84,7 @@
   "fluid_type.createillicititems.codeine_solution_fluid": "Codeine Solution",
   "fluid_type.createillicititems.pure_codeine_fluid": "Pure Codeine",
   "fluid_type.createillicititems.impure_sediment_fluid": "Impure Sediment",
+  "fluid_type.createillicititems.cough_syrup_fluid": "Cough Syrup",
 
   "effect.createillicititems.euphoria": "Euphoria",
   "effect.createillicititems.stoned": "Stoned",

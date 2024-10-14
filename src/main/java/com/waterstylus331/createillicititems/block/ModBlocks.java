@@ -123,6 +123,10 @@ public class ModBlocks {
     public static final RegistryObject<LiquidBlock> IMPURE_SEDIMENT_BLOCK = registerBlock("impure_sediment_block",
             () -> new LiquidBlock(ModFluids.SOURCE_IMPURE_SEDIMENT, BlockBehaviour.Properties.copy(Blocks.WATER)));
 
+    // cough syrup
+    public static final RegistryObject<LiquidBlock> COUGH_SYRUP_BLOCK = registerBlock("cough_syrup_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_COUGH_SYRUP, BlockBehaviour.Properties.copy(Blocks.WATER)));
+
     // for chalk
     public static final RegistryObject<DropExperienceBlock> TRONA_ORE = registerBlock("trona_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)

@@ -102,6 +102,11 @@ public class FluidTypes {
             FluidType.Properties.create().lightLevel(1).density(10).viscosity(6).sound(SoundAction.get("drink"),
                     SoundEvents.HONEY_DRINK).canDrown(true).canSwim(false).supportsBoating(false));
 
+    public static final RegistryObject<FluidType> COUGH_SYRUP_FLUID_TYPE = register("cough_syrup_fluid",
+            DARK_TRANSLUCENT_STILL, DARK_TRANSLUCENT_FLOW, MORPHINE, 0x705B2F00, new Vector3f(91f / 255f, 47f / 255f, 0f / 255f),
+            FluidType.Properties.create().lightLevel(1).density(8).viscosity(4).sound(SoundAction.get("drink"),
+                    SoundEvents.HONEY_DRINK).canDrown(true).canSwim(false).supportsBoating(false));
+
     private static RegistryObject<FluidType> register(String name, ResourceLocation still, ResourceLocation flow, ResourceLocation in,
             int tintColor, Vector3f fogColor, FluidType.Properties properties) {
         return FLUID_TYPES.register(name, () -> new ModFluidType(still, flow, in,
